@@ -1,6 +1,6 @@
 # Machine name
 function box_name {
-    [ -f ~/.box-name ] && cat ~/.box-name || hostname
+    hostname
 }
 
 # Git info
