@@ -8,7 +8,7 @@ function prompt_color {
 }
 
 # Git info
-local git_info=$(git_prompt_info)
+local git_info="$(git_prompt_info)"
 ZSH_THEME_GIT_PROMPT_PREFIX=" %F{067}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %F{160}●"
