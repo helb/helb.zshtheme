@@ -1,0 +1,39 @@
+# alternative config to make the Spaceship prompt look more or less like this one (and keep all its features)
+# https://github.com/denysdovhan/spaceship-prompt
+
+SPACESHIP_PROMPT_ORDER=(
+  user          # Username section
+  host          # Hostname section
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  hg            # Mercurial section (hg_branch  + hg_status)
+  package       # Package version
+  node          # Node.js section
+  docker        # Docker section
+  venv          # virtualenv section
+  exit_code     # Exit code section
+  char          # Prompt character
+  # …
+)
+
+SPACESHIP_USER_SHOW="always"
+SPACESHIP_HOST_SHOW="always"
+SPACESHIP_PROMPT_FIRST_PREFIX_SHOW="true"
+SPACESHIP_USER_PREFIX="%F{067}%{%b%}["
+SPACESHIP_USER_SUFFIX=""
+SPACESHIP_HOST_SUFFIX=""
+SPACESHIP_HOST_PREFIX="%F{079}%{%b%}@"
+SPACESHIP_PROMPT_ADD_NEWLINE="false"
+SPACESHIP_PROMPT_SEPARATE_LINE="false"
+SPACESHIP_CHAR_SYMBOL="$"
+SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_CHAR_SYMBOL_ROOT="#"
+SPACESHIP_DIR_SHOW="true"
+SPACESHIP_DIR_PREFIX=""
+SPACESHIP_DIR_SUFFIX="%F{067}%{%b%}] "
+SPACESHIP_DIR_TRUNC_PREFIX="…/"
+SPACESHIP_USER_COLOR="079"
+SPACESHIP_HOST_COLOR="083"
+SPACESHIP_DIR_COLOR="208"
+SPACESHIP_CHAR_COLOR_SUCCESS="075"
+SPACESHIP_CHAR_COLOR_FAILURE="075"
