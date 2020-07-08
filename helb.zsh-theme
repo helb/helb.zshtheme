@@ -12,11 +12,9 @@ ZSH_THEME_GIT_PROMPT_PREFIX=" %F{067}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %F{160}●"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %F{083}●"
-local git_info="$(git_prompt_info)"
-local venv_info=$(virtualenv_prompt_info)
 
 # Return value
 local retval="%(?.. %B%F{196} %? %b%{$reset_color%})"
 
-PROMPT="%b%F{067}[$(prompt_color)%n%B%F{079}@%F{083}%m%k%F{208}%B%~%b%F{067}]% %{$reset_color%}${venv_info}${git_info} %B%F{075}$(prompt_char) %b%f%k"
+PROMPT="%b%F{067}[$(prompt_color)%n%B%F{079}@%F{083}%m%k%F{208}%B%~%b%F{067}]% %{$reset_color%}$(virtualenv_prompt_info)$(git_prompt_info) %B%F{075}$(prompt_char) %b%f%k"
 RPROMPT="${retval}"
